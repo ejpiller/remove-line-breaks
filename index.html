@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+      html {
+        background-color: ghostwhite;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .child {
+        text-align: center;
+        width: 75%;
+        max-width: 750px;
+        font-family: "Rubik", sans-serif;
+      }
+
+      .footer {
+        position: fixed;
+        top: 90%;
+      }
+
+      textarea {
+        width: 100%;
+        font-family: "Rubik", sans-serif;
+      }
+
+      button {
+        font-family: "Rubik", sans-serif;
+        width: 100px;
+      }
+    </style>
+    <title>Remove Line Breaks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">
+        <h1>Remove Line Breaks</h1>
+        <textarea
+          id="input"
+          placeholder="Enter input text …"
+          aria-label="Input"
+        ></textarea>
+        <br />
+        <button type="submit" onclick="setValue()">Submit</button>
+        <br />
+        <br />
+        <textarea
+          id="output"
+          aria-label="Output"
+          placeholder="The output will appear here."
+        ></textarea>
+        <br />
+        <button type="button" id="copyButton" onclick="copyText()">
+          Copy Result
+        </button>
+      </div>
+      <div class="child footer">Created by <a href="https://www.erickpiller.me/">Erick Piller</a></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
